@@ -1,0 +1,36 @@
+
+<!-- <link rel="stylesheet" href="index.css">
+<input type="text" name="nomePessoa" id ="nomePessoa">
+
+<p>Aqui vem o valor mudado</p>
+<button onclick="mudar()">Mudar texto</button> -->
+
+<img width="50" src ="https://w7.pngwing.com/pngs/859/425/png-transparent-light-bulb-illustration-incandescent-light-bulb-lamp-bulb-candle-product-light.png"
+alt="" srcset="">
+<button onclick="mudarLampada()">Ligar / Desligar</button>
+
+<!-- <script>
+    function mudar(){
+        let nome = document.querySelector("input").value
+        document.querySelector("p").innerText = nome
+    }
+</script> -->
+
+
+<script>
+    
+    let lampOn = "https://www.designi.com.br/images/preview/11023700.jpg"
+    let lampOff = "https://w7.pngwing.com/pngs/859/425/png-transparent-light-bulb-illustration-incandescent-light-bulb-lamp-bulb-candle-product-light.png"
+
+    function mudarLampada(){
+        let lampada = document.querySelector("img").src
+
+        if(lampada == lampOff){
+            lampada = document.querySelector("img").src = lampOn
+        }else{
+            lampada = document.querySelector("img").src = lampOff
+    }
+            
+    }   
+    
+</script>
